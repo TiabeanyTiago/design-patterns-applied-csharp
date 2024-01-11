@@ -1,9 +1,9 @@
-﻿using DesignPatternsApp.AbstractFactory;
-using DesignPatternsApp.Builder;
-using DesignPatternsApp.Creational_Patterns.Builder;
-using DesignPatternsApp.Creational_Patterns.Prototype;
-using DesignPatternsApp.FactoryMethod;
-using DesignPatternsApp.Singleton;
+﻿using DesignPatternsApp.CreationalPatterns.AbstractFactory;
+using DesignPatternsApp.CreationalPatterns.Builder;
+using DesignPatternsApp.CreationalPatterns.Prototype;
+using DesignPatternsApp.CreationalPatterns.FactoryMethod;
+using DesignPatternsApp.CreationalPatterns.Singleton;
+using DesignPatternsApp.StructuralPatterns.Adapter;
 
 internal class Program
 {
@@ -16,5 +16,8 @@ internal class Program
         new FactoryMethodExample().Run();
         new PrototypeExample().Run();
         new SingletonExample().Run();
+
+        Console.WriteLine("Let's run the Structural Patterns Examples:");
+        new AdapterExample().Run();
     }
 }
